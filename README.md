@@ -1,8 +1,8 @@
 **File Structure:**
 The application is structured into separate components - MealsProvider, MealsList, Counter, and other supporting files like layout.js and page.js.
 
-**MealsProvider Component:
-**
+**MealsProvider Component:**
+
 This component serves as the context provider for managing the state related to meals.
 It initializes the state with an array of todaysMeals.
 Provides a function tickMeal to toggle the ticked property of a meal object.
@@ -27,7 +27,8 @@ Renders the count of remaining meals.
 
 This component defines the layout structure for the HTML document.
 It includes global stylesheets and font imports.
-Page Component (page.js):
+
+**Page Component (page.js):**
 
 This component serves as the entry point for the application.
 It imports and renders the MealsProvider, MealsList, and Counter components.
