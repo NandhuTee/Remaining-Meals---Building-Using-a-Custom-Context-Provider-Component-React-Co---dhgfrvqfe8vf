@@ -1,4 +1,5 @@
-**File Structure:** The application is structured into separate components - MealsProvider, MealsList, Counter, and other supporting files like layout.js and page.js.
+**File Structure:**
+The application is structured into separate components - MealsProvider, MealsList, Counter, and other supporting files like layout.js and page.js.
 
 **MealsProvider Component:
 **
@@ -7,18 +8,21 @@ It initializes the state with an array of todaysMeals.
 Provides a function tickMeal to toggle the ticked property of a meal object.
 Utilizes the useState hook to manage state and createContext to create a context for sharing state with child components.
 Note the usage of the 'use client' pragma, indicating that this file should be treated as a client-side component.
+
 **MealsList Component:**
 
 This component displays the list of meals and allows users to toggle their checked state using checkboxes.
 It uses the useContext hook to access the MealContext, which provides the meals state and tickMeal function.
 Renders a list of checkboxes based on the meals state, with each checkbox reflecting the checked state of a meal.
 Utilizes the onChange event handler to call the tickMeal function when a checkbox is clicked, updating the state accordingly.
+
 **Counter Component:**
 
 This component displays the count of remaining meals that are not checked.
 It also uses the useContext hook to access the MealContext and retrieve the meals state.
 Filters the meals array to count the number of meals with the ticked property set to false.
 Renders the count of remaining meals.
+
 **Layout Component (layout.js):**
 
 This component defines the layout structure for the HTML document.
@@ -27,6 +31,7 @@ Page Component (page.js):
 
 This component serves as the entry point for the application.
 It imports and renders the MealsProvider, MealsList, and Counter components.
+
 **Running the Application:**
 
 The application is built using Next.js, which provides features like server-side rendering and routing.
