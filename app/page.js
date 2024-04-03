@@ -1,9 +1,9 @@
-import React from 'react'
-import MealsProvider from './MealsProvider';
-import MealsList from './MealsList';
-import Counter from './Counter';
 
-function Home() {
+import MealsProvider from "./MealsProvider";
+import MealsList from "./MealsList.js";
+import Counter from "./Counter";
+
+export default function Home() {
   return (
     <div id="main">
       <MealsProvider>
@@ -11,7 +11,5 @@ function Home() {
         <Counter />
       </MealsProvider>
     </div>
-  )
+  );
 }
-
-export default Home
